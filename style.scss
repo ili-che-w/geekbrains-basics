@@ -1,0 +1,401 @@
+// Vars
+
+$white: #fff;
+$darkblue: #1f3f68;
+$blue: #5a98d0;
+
+// General
+
+* {
+    margin: 0;
+    padding: 0;
+}
+  
+body {
+    font-family: Roboto, sans-serif;
+}
+  
+hr {
+    opacity: 0.4;
+    border: 1px solid $white;
+}
+  
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    @media (max-width: 1024px) {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+    @media (max-width: 667px) {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    &_footer {
+        @media (max-width: 1024px) and (min-width: 668px) {
+            padding-left: 124px;
+            padding-right: 124px;
+        }
+    }
+}
+
+// Text Settings
+
+.text {
+    font-size: 16px;
+    line-height: 162%;
+    letter-spacing: 0.05em;
+    opacity: 0.6;
+    color: $darkblue;
+    &_project {
+        margin: 32px auto 64px;
+        width: 75%;
+        text-align: center;
+        color: #222222;
+        opacity: 1;
+        @media (max-width: 667px) {
+            width: 100%;
+        }
+    }
+    &_footer {
+        color: $white;
+        @media (max-width: 667px) {
+            text-align: center;
+        }
+    }
+    &_copy {
+        color: $white;
+        opacity: 0.4;
+    }
+}
+
+// Page Top
+
+.top {
+    background: linear-gradient(0deg, #ebf3fb 8.84%, #98c3e800 31.12%);
+    @media (max-width: 667px) {
+        padding-bottom: 41px;
+        box-sizing: border-box;
+    }
+    &__box {
+        display: flex;
+        flex-direction: column;
+        min-height: 768px;
+        height: 100%;
+        @media (max-width: 667px) {
+            min-height: 376px;
+        }
+    }
+    &__info {
+        padding-top: 115px;
+        flex-grow: 1;
+        background-image: url(./img/top__bg.png);
+        background-repeat: no-repeat;
+        background-position: right center;
+        background-size: 44%;
+        @media (max-width: 1024px) {
+            background-position: right 75%;
+        }
+        @media (max-width: 667px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 36px;
+            background-image: none;
+        }
+    }
+    &__heading {
+        width: 510px;
+        margin-bottom: 32px;
+        font-weight: 300;
+        font-size: 64px;
+        line-height: 116%;
+        letter-spacing: 0.04em;
+        color: $darkblue;
+        @media (max-width: 667px) {
+            width: 100%;
+            margin-bottom: 12px;
+            font-size: 32px;
+            line-height: 37px;
+            text-align: center;
+        }
+    }
+    &__text {
+        width: 425px;
+        @media (max-width: 667px) {
+            width: 100%;
+            text-align: center;
+        }
+    }
+    &__button {
+        margin-top: 71px;
+        display: inline-block;
+        padding: 15px 50px;
+        border-radius: 10px;
+        font-size: 16px;
+        line-height: 162%;
+        text-align: center;
+        letter-spacing: 0.04em;
+        text-decoration: none;
+        color: $white;
+        background: $blue;
+        box-shadow: 5px 10px 20px rgba(53, 110, 173, 0.2);
+        @media (max-width: 667px) {
+            font-size: 12px;
+            line-height: 217%;
+            padding: 0 8px;
+        }
+    }
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 42px;
+    list-style: none;
+    @media (max-width: 667px) {
+        margin-top: 24px;
+    }
+}
+
+// Content
+
+.heading {
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 128%;
+    text-align: center;
+    letter-spacing: 0.05em;
+    @media (max-width: 667px) {
+        font-size: 24px;
+        line-height: 28px;
+    }
+}
+
+.what-we-do {
+    padding-top: 64px;
+    @media (max-width: 667px) {
+        padding-top: 48px;
+    }
+}
+  
+.card-box {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 64px;
+    @media (max-width: 1024px) {
+        flex-direction: column;
+        align-items: center;
+    }
+    @media (max-width: 667px) {
+        padding-top: 32px;
+    }
+}
+
+// Card
+
+.card {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 360px;
+    padding: 44px 32px;
+    box-sizing: border-box;
+    background-color: $white;
+    box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+    border-radius: 10px;
+    @media (max-width: 1024px) {
+        margin-bottom: 32px;
+        @media (min-width: 668px) {
+            max-width: 360px;
+        }
+    }
+    @media (max-width: 667px) {
+        width: 100%;
+    }
+    &__img {
+        align-self: center;
+        margin-bottom: 51px;
+    }
+    &__link {
+        display: inline-block;
+        font-size: 14px;
+        line-height: 30px;
+        letter-spacing: 0.05em;
+        text-decoration: none;
+        color: $blue;
+    }
+}
+  
+.heading-mini {
+    margin-bottom: 14px;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 150%;
+    color: $darkblue;
+}
+
+// Project
+
+.project {
+    padding-top: 64px;
+    &__img {
+        width: 100%;
+    }
+    &__parent {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 32px;
+        @media (max-width: 667px) {
+            flex-direction: column;
+            margin-top: 16px;
+        }
+    }
+    &__item {
+        position: relative;
+        & + & {
+            margin-left: 32px;
+            @media (max-width: 667px) {
+                margin-left: 0;
+                margin-top: 16px;
+            }
+        }
+    }
+    &__text {
+        position: absolute;
+        top: 64px;
+        right: 64px;
+        font-size: 32px;
+        line-height: 144%;
+        letter-spacing: 0.05em;
+        text-align: right;
+        color: $white;
+        &_mini {
+            top: 32px;
+            right: auto;
+            left: 32px;
+            font-size: 28px;
+            line-height: 164%;
+            text-align: left;
+            @media (max-width: 667px) {
+                left: 16px;
+            }
+        }
+        @media (max-width: 667px) {
+            font-size: 16px;
+            line-height: 19px;
+            top: 16px;
+            right: 16px;
+        }
+    }
+}
+
+// Footer
+
+.footer {
+    margin-top: 112px;
+    padding-top: 91px;
+    padding-bottom: 64px;
+    background: #316099;
+    @media (max-width: 1024px) {
+        padding-top: 47px;
+    }
+    @media (max-width: 667px) {
+        margin-top: 64px;
+        padding-top: 18px;
+        padding-bottom: 32px;
+    }
+    &__top {
+        padding-bottom: 96px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @media (max-width: 1024px) {
+            padding-bottom: 64px;
+        }
+        @media (max-width: 667px) {
+            flex-direction: column;
+            padding-bottom: 40px;
+        }
+    }
+    &__text {
+        width: 495px;
+        @media (max-width: 1024px) {
+            width: 336px;
+        }
+    }
+    &__heading {
+        width: 340px;
+        margin-bottom: 32px;
+        color: $white;
+        text-align: left;
+        @media (max-width: 667px) {
+            text-align: center;
+        }
+    }
+    &__button {
+        padding: 15px 80px;
+        font-size: 16px;
+        line-height: 26px;
+        text-align: center;
+        letter-spacing: 0.04em;
+        text-decoration: none;
+        background: $blue;
+        color: $white;
+        @media (max-width: 1024px) {
+            padding: 4px 30px;
+        }
+        @media (max-width: 667px) {
+            margin-top: 40px;
+        }
+    }
+    &__info {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 64px;
+        @media (max-width: 1024px) {
+            flex-direction: column;
+        }
+        @media (max-width: 667px) {
+            margin-top: 32px;
+        }
+    }
+    &__list {
+        display: flex;
+        flex-grow: 1;
+        flex-basis: 33.3%;
+        margin-right: 32px;
+        list-style-type: none;
+        font-size: 16px;
+        line-height: 26px;
+        letter-spacing: 0.05em;
+        color: $white;
+        @media (max-width: 1024px) {
+            margin-top: 25px;
+        }
+        @media (max-width: 667px) {
+            line-height: 19px;
+        }
+        &:first-child::before {
+            content: '1.';
+            display: block;
+            margin-right: 16px;
+        }
+        &:nth-child(2)::before {
+            content: '2.';
+            display: block;
+            margin-right: 16px;
+        }
+        &:last-child::before {
+            content: '3.';
+            display: block;
+            margin-right: 16px;
+        }
+    }
+    &__copy {
+        margin-top: 64px;
+        @media (max-width: 667px) {
+            margin-top: 37px;
+        }
+    }
+}
