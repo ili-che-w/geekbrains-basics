@@ -8,155 +8,155 @@
   </head>
 
   <body>
-    <div class="top">
-      <div class="container top__box">
-        <ul class="header">
-          <li>
-            <a href="index.html">
-              <img src="./img/logo.svg" alt="Logo" />
-            </a>
-          </li>
-          <li>
-            <a href="contacts.html">
-              <img src="./img/contacts.svg" alt="Contacts" />
-            </a>
-          </li>
-        </ul>
-        <div class="top__info">
-          <h2 class="heading-big">Contact Us</h2>
-          <p class="text top__text">
+    <div class="contacts">
+      <ul class="header container">
+        <li>
+          <a href="index.html">
+            <img src="./img/logo.svg" alt="Logo" />
+          </a>
+        </li>
+        <li>
+          <a href="contacts.html">
+            <img src="./img/contacts.svg" alt="Contacts" />
+          </a>
+        </li>
+      </ul>
+      <div class="contacts__top">
+        <div class="container">
+          <h2 class="contacts__heading">Contact Us</h2>
+          <p class="contacts__lead-text">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-            do&nbsp;eiusmod tempor incididunt ut&nbsp;labore et&nbsp;dolore
-            magna aliqua.
+            do&nbsp;eiusmod tempor incididunt ut&nbsp;labore et&nbsp;dolore magna
+            aliqua.
           </p>
         </div>
       </div>
-    </div>
-
-    <div class="content">
-      <div class="container">
-        <div class="contacts">
+      <div class="contacts__content container">
+        <div class="contacts__main">
           <div class="contacts-info">
-            <img src="img/square.png" alt="Black square" />
+            <img src="./img/contacts_img.png" alt="Contact Us" />
 
-            <h4 class="subheading">Address</h4>
+            <h4 class="contacts__heading_mini contacts__heading_upper">Address</h4>
             <p class="text">
-              Lorem ipsum dolor sit amet consectetur adipisicing.
+              Id&nbsp;convallis placerat sit sed duis id&nbsp;amet volutpat quam a, pharetra.
             </p>
 
-            <h4 class="subheading">Phone</h4>
+            <h4 class="contacts__heading_mini contacts__heading_upper">Phone</h4>
             <ul>
-              <li>+7&nbsp;(888)&nbsp;000-00-00</li>
-              <li>+7&nbsp;(888)&nbsp;000-00-01</li>
+              <li class="text contacts__list contacts__list_phone">+7-812-7313-4321</li>
+              <li class="text contacts__list contacts__list_phone">+7-817-0000-1234</li>
             </ul>
 
-            <h4 class="subheading">Online Service</h4>
+            <h4 class="contacts__heading_mini contacts__heading_upper">Online Service</h4>
             <ul>
-              <li>
-                <a href="https://example.com" target="_blank">
-                  https://example.com
-                </a>
+              <li class="contacts__list contacts__list_site">
+                <a href="#" class="text contacts__link">www.site.com</a>
               </li>
-              <li>
-                <a href="mailto:online-service@example.com">
-                  online-service@example.com
-                </a>
+              <li class="contacts__list contacts__list_mail">
+                <a href="#" class="text contacts__link">online-service@example.com</a>
               </li>
             </ul>
           </div>
           <div class="contacts-form">
-            <h4 class="subheading">Send Us Message</h4>
-            <form action="#">
-              Full name
+            <h4 class="contacts__heading_mini contacts__heading_upper contacts-form__heading">Send Us Message</h4>
+            <form class="contacts-form__form" action="#">
+              <div class="contacts-form__helper">Full name</div>
               <input
                 type="text"
                 placeholder="Your full name"
-                class="input-field"
+                class="contacts-form__input"
               />
-              <br />
-              E-mail
+              <div class="contacts-form__helper">E-mail</div>
               <input
                 type="email"
                 placeholder="Your e-mail"
-                class="input-field"
+                class="contacts-form__input"
               />
-              <br />
-              Message
-              <br />
+              <div class="contacts-form__helper">Message</div>
               <textarea
                 cols="30"
                 rows="10"
                 placeholder="Type your message here..."
-                class="input-field"
+                class="contacts-form__input"
               ></textarea>
               <br />
-              <button type="submit" class="submit">Send</button>
+              <button type="submit" class="contacts-form__button">Submit</button>
             </form>
           </div>
         </div>
-        <div class="map">
-          <div style="position: relative; overflow: hidden">
-            <a
-              href="https://yandex.ru/maps/org/kreyser_avrora/182873539929/?utm_medium=mapframe&utm_source=maps"
-              style="color: #eee; font-size: 12px; position: absolute; top: 0px"
-              >Крейсер Аврора</a
-            >
-            <a
-              href="https://yandex.ru/maps/2/saint-petersburg/category/landmark_attraction/89683368508/?utm_medium=mapframe&utm_source=maps"
-              style="
-                color: #eee;
-                font-size: 12px;
-                position: absolute;
-                top: 14px;
-              "
-              >Достопримечательность в Санкт‑Петербурге</a
-            >
-            <a
-              href="https://yandex.ru/maps/2/saint-petersburg/category/museum/184105894/?utm_medium=mapframe&utm_source=maps"
-              style="
-                color: #eee;
-                font-size: 12px;
-                position: absolute;
-                top: 28px;
-              "
-              >Музей в Санкт‑Петербурге</a
-            >
-            <iframe
-              src="https://yandex.ru/map-widget/v1/-/CCUMBMh~WC"
-              width="100%"
-              height="400"
-              frameborder="1"
-              allowfullscreen="true"
-              style="position: relative"
-            ></iframe>
-          </div>
+      </div>
+      <div class="contacts-map">
+        <div style="position: relative; overflow: hidden">
+          <a
+            href="https://yandex.ru/maps/org/kreyser_avrora/182873539929/?utm_medium=mapframe&utm_source=maps"
+            style="color: #eee; font-size: 12px; position: absolute; top: 0px"
+            target="_blank"
+          >
+            Крейсер Аврора
+          </a>
+          <a
+            href="https://yandex.ru/maps/2/saint-petersburg/category/landmark_attraction/89683368508/?utm_medium=mapframe&utm_source=maps"
+            style="
+              color: #eee;
+              font-size: 12px;
+              position: absolute;
+              top: 14px;
+            "
+            target="_blank"
+          >
+            Достопримечательность в Санкт‑Петербурге
+          </a>
+          <a
+            href="https://yandex.ru/maps/2/saint-petersburg/category/museum/184105894/?utm_medium=mapframe&utm_source=maps"
+            style="
+              color: #eee;
+              font-size: 12px;
+              position: absolute;
+              top: 28px;
+            "
+          >
+            Музей в Санкт‑Петербурге
+          </a>
+          <iframe
+            src="https://yandex.ru/map-widget/v1/-/CCUMBMh~WC"
+            width="100%"
+            height="400"
+            frameborder="1"
+            allowfullscreen="true"
+            style="position: relative"
+          ></iframe>
         </div>
       </div>
     </div>
 
     <div class="footer">
-      <div class="container">
-        <div class="footer-top">
-          <div class="footer-top__info">
-            <h3 class="footer-heading">Intersted to woek with our team?</h3>
-            <p class="text">
+      <div class="container container_footer">
+        <div class="footer__top">
+          <div class="footer__text">
+            <h3 class="heading footer__heading">
+              Intersted to woek with our team?
+            </h3>
+            <p class="text text_footer">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
               do&nbsp;eiusmod tempor incididunt ut&nbsp;labore et&nbsp;dolore
               magna aliqua. Ut enim ad minim veniam.
             </p>
           </div>
+          <a href="#" class="footer__button">Let's talk</a>
         </div>
-        <hr />
-        <div class="footer-bottom">
-          <div class="footer__contacts">
-            <ul class="contacts-list">
-              <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-              <li>+62-812-7313-4321</li>
-              <li>hello.afrian@gmail.com</li>
-            </ul>
-          </div>
-          <div class="copyright">
-            <p class="text">&copy; All rights reserved</p>
+      </div>
+      <hr />
+      <div class="container container_footer">
+        <div class="footer__bottom">
+          <ul class="footer__info">
+            <li class="footer__list">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            </li>
+            <li class="footer__list">+7-812-7313-4321</li>
+            <li class="footer__list">hello.afrian@gmail.com</li>
+          </ul>
+          <div class="footer__copy">
+            <p class="text text_copy">&copy; 2021 All rights reserved</p>
           </div>
         </div>
       </div>

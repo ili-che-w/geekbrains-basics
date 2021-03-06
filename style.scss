@@ -1,8 +1,9 @@
 // Vars
 
 $white: #fff;
-$darkblue: #1f3f68;
-$blue: #5a98d0;
+$blue_01: #1f3f68;
+$blue_03: #356ead;
+$blue_04: #5A98D0;
 
 // General
 
@@ -46,7 +47,7 @@ hr {
     line-height: 162%;
     letter-spacing: 0.05em;
     opacity: 0.6;
-    color: $darkblue;
+    color: $blue_01;
     &_project {
         margin: 32px auto 64px;
         width: 75%;
@@ -111,7 +112,7 @@ hr {
         font-size: 64px;
         line-height: 116%;
         letter-spacing: 0.04em;
-        color: $darkblue;
+        color: $blue_01;
         @media (max-width: 667px) {
             width: 100%;
             margin-bottom: 12px;
@@ -138,7 +139,7 @@ hr {
         letter-spacing: 0.04em;
         text-decoration: none;
         color: $white;
-        background: $blue;
+        background: $blue_04;
         box-shadow: 5px 10px 20px rgba(53, 110, 173, 0.2);
         @media (max-width: 667px) {
             font-size: 12px;
@@ -222,7 +223,7 @@ hr {
         line-height: 30px;
         letter-spacing: 0.05em;
         text-decoration: none;
-        color: $blue;
+        color: $blue_04;
     }
 }
   
@@ -231,8 +232,8 @@ hr {
     font-weight: normal;
     font-size: 20px;
     line-height: 30px;
-    letter-spacing: 150%;
-    color: $darkblue;
+    letter-spacing: 0.05em;
+    color: $blue_01;
 }
 
 // Project
@@ -340,7 +341,7 @@ hr {
         text-align: center;
         letter-spacing: 0.04em;
         text-decoration: none;
-        background: $blue;
+        background: $blue_04;
         color: $white;
         @media (max-width: 1024px) {
             padding: 4px 30px;
@@ -397,5 +398,200 @@ hr {
         @media (max-width: 667px) {
             margin-top: 37px;
         }
+    }
+}
+
+.contacts {
+    &__top {
+        margin-top: 54px;
+        padding-top: 51px;
+        padding-bottom: 49px;
+        background-image: url(./img/contacts__bg.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        @media (max-width: 667px) {
+            padding-top: 48px;
+        }
+    }
+    &__heading {
+        margin-bottom: 16px;
+        font-weight: 500;
+        font-size: 44px;
+        line-height: 74px;
+        text-align: center;
+        letter-spacing: 0.04em;
+        color: $white;
+        @media (max-width: 667px) {
+            margin-bottom: 32px;
+            font-size: 24px;
+            line-height: 28px;
+        }
+        &_mini {
+            margin-top: 40px;
+            margin-bottom: 24px;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 30px;
+            letter-spacing: 0.04em;
+            color: $blue_01;
+        }
+        &_upper {
+            text-transform: uppercase;
+        }
+    }
+    &__lead-text {
+        max-width: 780px;
+        margin: 0 auto;
+        font-size: 20px;
+        line-height: 30px;
+        letter-spacing: 0.04em;
+        text-align: center;
+        color: rgba(255, 255, 255, 0.6);
+        @media (max-width: 1024px) {
+            max-width: 520px;
+        }
+        @media (max-width: 667px) {
+            font-size: 16px;
+            line-height: 30px;
+        }
+    }
+    &__content {
+        max-width: 940px;
+    }
+    &__main {
+        display: flex;
+        justify-content: space-between;
+        @media (max-width: 1024px) {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    &-info {
+        width: 300px;
+        margin-top: 135px;
+        margin-right: 101px;
+        @media (max-width: 1024px) {
+            margin-right: 0;
+        }
+    }
+    &__list {
+        list-style-type: none;
+        margin-bottom: 16px;
+        display: flex;
+        align-items: center;
+        &::before {
+            content: '';
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            margin-right: 19px;
+            background-repeat: no-repeat;
+        }
+        &_phone::before {
+            width: 18px;
+            height: 18px;
+            background-image: url(./img/phone.svg);
+        }
+        &_site::before {
+            background-image: url(./img/site.svg);
+        }
+        &_mail::before {
+            background-image: url(./img/mail.svg);
+        }
+    }
+    &__link {
+        text-decoration: none;
+        &:active,
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    &-form {
+        flex-grow: 1;
+        margin-top: 64px;
+        padding: 56px;
+        box-sizing: border-box;
+        border-radius: 10px;
+        background: #FFFFFF;
+        box-shadow: 5px 10px 50px rgba(16, 112, 177, 0.2);
+        @media (max-width: 1024px) {
+            width: 520px;
+        }
+        @media (max-width: 667px) {
+            width: 100%;
+            padding: 36px;
+        }
+        &__form {
+            display: flex;
+            flex-direction: column;
+        }
+        &__heading {
+            margin-top: 0;
+            margin-bottom: 48px;
+            @media (max-width: 667px) {
+                margin-bottom: 31px;
+                font-size: 16px;
+            }
+        }
+        &__helper {
+            margin-top: 32px;
+            margin-bottom: 8px;
+            font-size: 16px;
+            line-height: 30px;
+            letter-spacing: 0.04em;
+            color: $blue_01;
+            opacity: 0.8;
+            @media (max-width: 667px) {
+                margin-top: 20px;
+                font-size: 14px;
+            }
+            &:first-child {
+                margin-top: 0;
+            }
+        }
+        &__input {
+            border-radius: 10px;
+            padding: 21px 36px;
+            box-sizing: border-box;
+            border: 1px solid $blue_03;
+            opacity: 0.4;
+            @media (max-width: 667px) {
+                padding: 12px 22px;
+            }
+            &::placeholder {
+                font-family: Roboto, sans-serif;
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 30px;
+                letter-spacing: 0.04em;
+                color: $blue_01;
+                opacity: 0.5;
+                @media (max-width: 667px) {
+                    font-size: 14px;
+                }
+            }
+        }
+        &__button {
+            margin-top: 72px;
+            padding: 23px 0;
+            border: none;
+            border-radius: 10px;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 26px;
+            text-align: center;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            background-color: $blue_04;
+            color: $white;
+            box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+            @media (max-width: 667px) {
+                margin-top: 46px;
+                padding: 15px;
+            }
+        }
+    }
+    &-map {
+        margin-top: 96px;
     }
 }
